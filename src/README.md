@@ -2,10 +2,10 @@
 home: true
 layout: BlogHome
 icon: home
-title: Blog Home
+title: 博客首页
 heroImage: /logo.svg
-heroText: the name of your blog
-tagline: You can put your slogan here
+heroText: L - 时光不负
+tagline: 尽力便无悔无憾
 heroFullScreen: true
 projects:
   - icon: project
