@@ -7,7 +7,7 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "en-US",
-      title: "个人网站",
+      title: "L - 时光不负",
       description: "哇哩哇哩哇个人博客",
     }
     // "/zh/": {
