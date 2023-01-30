@@ -41,8 +41,4 @@ projects:
 footer: '<a href="https://beian.miit.gov.cn/" target="_blank">冀ICP备2023002189号-1</a>'
 ---
 
-This is a blog home page demo.
-
-To use this layout, you should set both `layout: BlogHome` and `home: true` in the page front matter.
-
-For related configuration docs, please see [blog homepage](https://theme-hope.vuejs.vuepress/guide/blog/home/).
+## 通用footer
