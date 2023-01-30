@@ -16,7 +16,7 @@ star: true
 
 JDK1.8以后 HashMap的数据结构发生了一些改变,从单纯的数组加链表结构变成数组+链表+红黑树.如图
 
-![](./assets/20210506-hashmap-sourcecode/20210506-hashmap-sourcecode-1675077942463.png)
+![](./assets/20210506-hashmap-sourcecode/dda45c833d194947a0af6179a7215341.png)
 
 其中的Node是HashMap的静态内部类，实现了Map.Entry接口，本质就是一个KV映射，上图中的小圆圈就是一个Node
 
