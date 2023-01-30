@@ -34,9 +34,8 @@ export default hopeTheme({
       // sidebar
       sidebar: enSidebar,
 
-      // footer: "Default footer",
-      footer: "冀ICP备2023002189号",
-
+      // 页脚支持
+      footer: '<a href="https://beian.miit.gov.cn/" target="_blank">冀ICP备2023002189号-1</a>',
       displayFooter: true,
 
       blog: {
@@ -49,30 +48,6 @@ export default hopeTheme({
       },
     }
 
-    /**
-     * Chinese locale config
-     */
-    // "/zh/": {
-    //   // navbar
-    //   navbar: zhNavbar,
-
-    //   // sidebar
-    //   sidebar: zhSidebar,
-
-    //   footer: "默认页脚",
-
-    //   displayFooter: true,
-
-    //   blog: {
-    //     description: "一个前端开发者",
-    //     intro: "/zh/intro.html",
-    //   },
-
-    //   // page meta
-    //   metaLocales: {
-    //     editLink: "在 GitHub 上编辑此页",
-    //   },
-    // },
   },
 
   encrypt: {

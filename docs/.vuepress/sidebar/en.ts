@@ -4,15 +4,9 @@ export const enSidebar = sidebar({
   "/": [
     "",
     {
-      icon: "discover",
-      text: "教程",
-      prefix: "docs/",
-      link: "docs/",
-      children: "structure",
-    },
-    {
       text: "一、Core-Java",
       icon: "note",
+      collapsible: true,
       children: [
         {
           text: "1.1、集合",
@@ -25,6 +19,7 @@ export const enSidebar = sidebar({
     {
       text: "二、Java企业级开发",
       icon: "note",
+      collapsible: true,
       children: [
         {
           text: "2.1、Spring",
@@ -73,6 +68,7 @@ export const enSidebar = sidebar({
     {
       text: "三、数据库",
       icon: "note",
+      collapsible: true,
       children: [
         {
           text: "Mysql",
@@ -99,9 +95,9 @@ export const enSidebar = sidebar({
       text: "踩坑系列",
       prefix: "pits/",
       link: "pits/",
+      collapsible: true,
       children: "structure",
     },
-    "intro",
-    "slides",
+    "intro"
   ],
 });

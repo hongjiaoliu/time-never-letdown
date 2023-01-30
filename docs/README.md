@@ -5,18 +5,18 @@ icon: home
 title: 博客首页
 heroImage: /logo.svg
 heroText: L - 时光不负
-tagline: 尽力便无悔无憾
-heroFullScreen: true
+tagline: 有多少努力，就有多少光芒
+heroFullScreen: false
 projects:
   - icon: project
-    name: project name
-    desc: project detailed description
-    link: https://your.project.link
+    name: 聚水成川
+    desc: 持续学习方可不退而进
+    link: /core-java
 
   - icon: link
-    name: link name
-    desc: link detailed description
-    link: https://link.address
+    name: 服务端
+    desc: 服务端集锦
+    link: /category/server/
 
   - icon: book
     name: book name
@@ -38,10 +38,8 @@ projects:
     desc: Detailed description of this custom item
     link: https://link.to.your.friend
 
-footer: This is A default footer
+footer: '<a href="https://beian.miit.gov.cn/" target="_blank">冀ICP备2023002189号-1</a>'
 ---
-
-[冀ICP备2023002189号]("http://beian.miit.gov.cn/")
 
 This is a blog home page demo.
 
