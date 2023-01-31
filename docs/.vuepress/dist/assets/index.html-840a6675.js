@@ -1,1 +1,0 @@
-import{_ as t,V as o,W as r,X as e,Y as a}from"./framework-9e98e3f0.js";const c={},n=e("h2",{id:"通用footer",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#通用footer","aria-hidden":"true"},"#"),a(" 通用footer")],-1),s=[n];function _(d,i){return o(),r("div",null,s)}const h=t(c,[["render",_],["__file","index.html.vue"]]);export{h as default};
