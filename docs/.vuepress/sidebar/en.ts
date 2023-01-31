@@ -71,21 +71,46 @@ export const enSidebar = sidebar({
       collapsible: true,
       children: [
         {
-          text: "Mysql",
+          text: "3.1、Mysql",
           icon: "note",
           prefix: "db/mysql/",
           children: "structure",
         },
         {
-          text: "Redis",
+          text: "3.2、Redis",
           icon: "note",
           prefix: "db/redis/",
           children: "structure",
         },
         {
-          text: "MongoDB",
+          text: "3.3、MongoDB",
           icon: "note",
           prefix: "db/mongodb/",
+          children: "structure",
+        },
+      ]
+    },
+    {
+      text: "四、扩展系列",
+      icon: "note",
+      collapsible: true,
+      children: [
+        {
+          text: "4.1、Python",
+          icon: "note",
+          prefix: "expand/python/",
+          children: "structure",
+        },
+        {
+          text: "4.2、Vue",
+          icon: "note",
+          prefix: "expand/vue/",
+          children: "structure",
+        },
+        {
+          text: "4.3、React",
+          icon: "note",
+          prefix: "expand/react/",
           children: "structure",
         },
       ]
