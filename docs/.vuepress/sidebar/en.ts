@@ -9,7 +9,13 @@ export const enSidebar = sidebar({
       collapsible: true,
       children: [
         {
-          text: "1.1、集合",
+          text: "1.1、基础",
+          icon: "note",
+          prefix: "core-java/base/",
+          children: "structure",
+        },
+        {
+          text: "1.2、集合",
           icon: "note",
           prefix: "core-java/collections/",
           children: "structure",
