@@ -35,16 +35,16 @@ export default hopeTheme({
       sidebar: enSidebar,
 
       // 页脚支持
-      footer: '<a href="https://beian.miit.gov.cn/" target="_blank">冀ICP备2023002189号-1</a>',
+      footer: '<div style="width:600px;margin:0 auto; padding:20px 0;"><a target="_blank" href="https://beian.miit.gov.cn/"  style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">冀ICP备2023002189号-1</p></a><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11011402013606" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="/beian_icon.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">京公网安备 11011402013606号</p></a></div>',
       displayFooter: true,
 
       blog: {
-        description: "A FrontEnd programmer",
+        description: "人生的道路从来不会一成不变，有坦途，也必然有曲径；有阳光，也必然有云雨；有过去，势必有明天。不要奢望只活在阳光里，没有雨露滋润的生命岂能成长。",
         intro: "/intro.html",
       },
 
       metaLocales: {
-        editLink: "Edit this page on GitHub",
+        editLink: "在GitHub上编辑",
       },
     }
 
@@ -63,28 +63,16 @@ export default hopeTheme({
     // If you don’t need comment feature, you can remove following option
     // The following config is for demo ONLY, if you need comment feature, please generate and use your own config, see comment plugin documentation for details.
     // To avoid disturbing the theme developer and consuming his resources, please DO NOT use the following config directly in your production environment!!!!!
-    comment: {
-      /**
-       * Using Giscus
-       */
-      provider: "Giscus",
-      repo: "vuepress-theme-hope/giscus-discussions",
-      repoId: "R_kgDOG_Pt2A",
-      category: "Announcements",
-      categoryId: "DIC_kwDOG_Pt2M4COD69",
-
-      /**
-       * Using Twikoo
-       */
-      // provider: "Twikoo",
-      // envId: "https://twikoo.ccknbc.vercel.app",
-
-      /**
-       * Using Waline
-       */
-      // provider: "Waline",
-      // serverURL: "https://vuepress-theme-hope-comment.vercel.app",
-    },
+    // comment: {
+    //   /**
+    //    * Using Giscus
+    //    */
+    //   provider: "Giscus",
+    //   repo: "vuepress-theme-hope/giscus-discussions",
+    //   repoId: "R_kgDOG_Pt2A",
+    //   category: "Announcements",
+    //   categoryId: "DIC_kwDOG_Pt2M4COD69",
+    // },
 
     // Disable features you don’t want here
     mdEnhance: {
@@ -128,63 +116,6 @@ export default hopeTheme({
       tabs: true,
       vPre: true,
       vuePlayground: true,
-    },
-
-    // uncomment these if you want a PWA
-    // pwa: {
-    //   favicon: "/favicon.ico",
-    //   cacheHTML: true,
-    //   cachePic: true,
-    //   appendBase: true,
-    //   apple: {
-    //     icon: "/assets/icon/apple-icon-152.png",
-    //     statusBarColor: "black",
-    //   },
-    //   msTile: {
-    //     image: "/assets/icon/ms-icon-144.png",
-    //     color: "#ffffff",
-    //   },
-    //   manifest: {
-    //     icons: [
-    //       {
-    //         src: "/assets/icon/chrome-mask-512.png",
-    //         sizes: "512x512",
-    //         purpose: "maskable",
-    //         type: "image/png",
-    //       },
-    //       {
-    //         src: "/assets/icon/chrome-mask-192.png",
-    //         sizes: "192x192",
-    //         purpose: "maskable",
-    //         type: "image/png",
-    //       },
-    //       {
-    //         src: "/assets/icon/chrome-512.png",
-    //         sizes: "512x512",
-    //         type: "image/png",
-    //       },
-    //       {
-    //         src: "/assets/icon/chrome-192.png",
-    //         sizes: "192x192",
-    //         type: "image/png",
-    //       },
-    //     ],
-    //     shortcuts: [
-    //       {
-    //         name: "Demo",
-    //         short_name: "Demo",
-    //         url: "/demo/",
-    //         icons: [
-    //           {
-    //             src: "/assets/icon/guide-maskable.png",
-    //             sizes: "192x192",
-    //             purpose: "maskable",
-    //             type: "image/png",
-    //           },
-    //         ],
-    //       },
-    //     ],
-    //   },
-    // },
-  },
+    }
+  }
 });
