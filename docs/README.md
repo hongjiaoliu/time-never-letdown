@@ -38,7 +38,11 @@ projects:
     desc: Detailed description of this custom item
     link: https://link.to.your.friend
 
-footer: '<a href="https://beian.miit.gov.cn/" target="_blank">冀ICP备2023002189号-1</a>'
+footer: '<div style="width:600px;margin:0 auto; padding:20px 0;">
+        <a target="_blank" href="https://beian.miit.gov.cn/"  style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">冀ICP备2023002189号-1</p></a>
+		 		<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11011402013606" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="/beian_icon.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">京公网安备 11011402013606号</p></a>
+		 	</div>
+		 '
 ---
 
 ## 通用footer
