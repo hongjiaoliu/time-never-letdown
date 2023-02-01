@@ -91,24 +91,43 @@ export const enSidebar = sidebar({
       ]
     },
     {
-      text: "四、扩展系列",
+      text: "四、通用技能",
       icon: "note",
       collapsible: true,
       children: [
         {
-          text: "4.1、Python",
+          text: "4.1、Linux | 命令",
+          icon: "note",
+          prefix: "general/linux/commands",
+          children: "structure"
+        },
+        {
+          text: "4.2、Linux | 文件",
+          icon: "note",
+          prefix: "general/linux/files",
+          children: "structure"
+        }
+      ]
+    },
+    {
+      text: "五、扩展系列",
+      icon: "note",
+      collapsible: true,
+      children: [
+        {
+          text: "5.1、Python",
           icon: "note",
           prefix: "expand/python/",
           children: "structure",
         },
         {
-          text: "4.2、Vue",
+          text: "5.2、Vue",
           icon: "note",
           prefix: "expand/vue/",
           children: "structure",
         },
         {
-          text: "4.3、React",
+          text: "5.3、React",
           icon: "note",
           prefix: "expand/react/",
           children: "structure",
