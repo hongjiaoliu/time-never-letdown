@@ -1,6 +1,6 @@
 import { hopeTheme } from "vuepress-theme-hope";
-import { enNavbar, zhNavbar } from "./navbar/index.js";
-import { enSidebar, zhSidebar } from "./sidebar/index.js";
+import { Navbar} from "./navbar.js";
+import { Sidebar} from "./sidebar.js";
 
 export default hopeTheme({
   hostname: "https://mister-hope.github.io",
@@ -29,10 +29,10 @@ export default hopeTheme({
   locales: {
     "/": {
       // navbar
-      navbar: enNavbar,
+      navbar: Navbar,
 
       // sidebar
-      sidebar: enSidebar,
+      sidebar: Sidebar,
 
       // 页脚支持
       footer: '<div style="width:600px;margin:0 auto; padding:20px 0;"><a target="_blank" href="https://beian.miit.gov.cn/"  style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">冀ICP备2023002189号-1</p></a><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11011402013606" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="/beian_icon.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">京公网安备 11011402013606号</p></a></div>',
@@ -60,19 +60,21 @@ export default hopeTheme({
   plugins: {
     blog: true,
 
+
     // If you don’t need comment feature, you can remove following option
     // The following config is for demo ONLY, if you need comment feature, please generate and use your own config, see comment plugin documentation for details.
     // To avoid disturbing the theme developer and consuming his resources, please DO NOT use the following config directly in your production environment!!!!!
-    // comment: {
-    //   /**
-    //    * Using Giscus
-    //    */
-    //   provider: "Giscus",
-    //   repo: "vuepress-theme-hope/giscus-discussions",
-    //   repoId: "R_kgDOG_Pt2A",
-    //   category: "Announcements",
-    //   categoryId: "DIC_kwDOG_Pt2M4COD69",
-    // },
+    comment: {
+      /**
+       * Using Giscus
+       */
+      provider: "Giscus",
+      repo: "hongjiaoliu/time-never-letdown",
+      repoId: "R_kgDOIz2AxQ",
+      category: "Announcements",
+      categoryId: "DIC_kwDOIz2Axc4CT9Av",
+    },
+ 
 
     // Disable features you don’t want here
     mdEnhance: {
