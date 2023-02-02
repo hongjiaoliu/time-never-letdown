@@ -8,35 +8,31 @@ heroText: L - 时光不负
 tagline: 有多少努力，就有多少光芒
 heroFullScreen: false
 projects:
-  - icon: project
+  - icon: java
     name: 聚水成川
     desc: 持续学习方可不退而进
     link: /core-java
 
-  - icon: link
+  - icon: study
     name: 服务端
     desc: 服务端集锦
     link: /category/server/
 
-  - icon: book
-    name: book name
-    desc: Detailed description of the book
-    link: https://link.to.your.book
-
   - icon: article
-    name: article name
-    desc: Detailed description of the article
-    link: https://link.to.your.article
+    name: 企业开发
+    desc: 企业级开发技能集锦
+    link: /enterprise
 
-  - icon: friend
-    name: friend name
-    desc: Detailed description of friend
-    link: https://link.to.your.friend
+  - icon: project
+    name: 数据库
+    desc: 数据库系列
+    link: /db
 
-  - icon: /logo.svg
-    name: custom item
-    desc: Detailed description of this custom item
-    link: https://link.to.your.friend
+  - icon: notice
+    name: 踩坑系列
+    desc: 小猪🐷佩琪日常踩坑
+    link: /pits
+
 
 footer: '<div style="width:600px;margin:0 auto; padding:20px 0;">
         <a target="_blank" href="https://beian.miit.gov.cn/"  style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">冀ICP备2023002189号-1</p></a>
