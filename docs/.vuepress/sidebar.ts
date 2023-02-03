@@ -102,13 +102,19 @@ export const Sidebar = sidebar({
       collapsible: true,
       children: [
         {
-          text: "4.1、Linux | 命令",
+          text: "4.1、Linux | 常识",
+          icon: "note",
+          prefix: "general/linux/base",
+          children: "structure"
+        },
+        {
+          text: "4.2、Linux | 命令",
           icon: "note",
           prefix: "general/linux/commands",
           children: "structure"
         },
         {
-          text: "4.2、Linux | 文件",
+          text: "4.3、Linux | 文件",
           icon: "note",
           prefix: "general/linux/files",
           children: "structure"
