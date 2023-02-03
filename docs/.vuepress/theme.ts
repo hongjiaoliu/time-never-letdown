@@ -3,8 +3,9 @@ import { Navbar} from "./navbar.js";
 import { Sidebar} from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://mister-hope.github.io",
+  hostname: "https://liuhongjiao.cn",
 
+  // 全局默认作者
   author: {
     name: "哇哩哇哩哇",
     url: "https://liuhongjiao.cn",
@@ -15,10 +16,32 @@ export default hopeTheme({
   logo: "/logo.svg",
 
   repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repoLabel: "GitHub",
 
   docsDir: "docs",
+  docsBranch: "master",
+
+  // 全屏按钮
+  fullscreen: true,
+  // 在深色模式，浅色模式和自动之间切换 (默认)
+  darkmode: "switch",
+  // 纯净模式，会禁用一些花哨的动画以及一些色彩
+  // pure: true,
+
+  // 阿里妈妈图标的前缀
+  iconPrefix: "iconfont icon-",
+  // Iconfont 精选图标 和 阿里妈妈的互斥
+  // iconAssets: "iconfont",
+
+  // 文章信息，可以填入数组，数组的顺序是各条目显示的顺序
+  pageInfo: ["Author", "Original", "Date", "Category", "Tag", "Word","ReadingTime"],
 
   blog: {
+    // 个人介绍页地址
+    intro: "/about-the-author/",
+    sidebarDisplay: "mobile",
+    // 圆角
+    roundAvatar: true,
     medias: {
       Email: "69611188@163.com",
       Gitee: "https://gitee.com/maohoo",
@@ -59,6 +82,8 @@ export default hopeTheme({
 
   plugins: {
     blog: true,
+    // 该插件会监听页面滚动事件。当页面滚动至某个 标题锚点 后，如果存在对应的 标题链接 ，那么该插件会将路由 Hash 更改为该 标题锚点 。
+    activeHeaderLinks: true,
     copyright: true,
 
     // If you don’t need comment feature, you can remove following option
