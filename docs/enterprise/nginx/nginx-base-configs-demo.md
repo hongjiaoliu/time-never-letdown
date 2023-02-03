@@ -8,6 +8,8 @@ tag:
 star: false
 ---
 
+# Nginx | 1-核心配置
+
 ```shell
 #定义 nginx 运行的用户和用户组
 user www www;
