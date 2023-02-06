@@ -38,10 +38,10 @@ export default hopeTheme({
 
   blog: {
     // 个人介绍页地址
-    intro: "/about-the-author/",
-    sidebarDisplay: "mobile",
+    // intro: "/about-the-author/",
+    // sidebarDisplay: "mobile",
     // 圆角
-    roundAvatar: true,
+    // roundAvatar: true,
     medias: {
       Email: "69611188@163.com",
       Gitee: "https://gitee.com/maohoo",
