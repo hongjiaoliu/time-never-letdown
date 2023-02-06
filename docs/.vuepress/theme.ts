@@ -83,8 +83,8 @@ export default hopeTheme({
   plugins: {
     blog: true,
     // 该插件会监听页面滚动事件。当页面滚动至某个 标题锚点 后，如果存在对应的 标题链接 ，那么该插件会将路由 Hash 更改为该 标题锚点 。
-    activeHeaderLinks: true,
-    copyright: true,
+    // activeHeaderLinks: true,
+    // copyright: true,
 
     // If you don’t need comment feature, you can remove following option
     // The following config is for demo ONLY, if you need comment feature, please generate and use your own config, see comment plugin documentation for details.
