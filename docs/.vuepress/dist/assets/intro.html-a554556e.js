@@ -1,1 +1,0 @@
-import{_ as t,V as a,W as r,X as e,Y as o}from"./framework-e5211252.js";const c={},n=e("h1",{id:"个人介绍",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#个人介绍","aria-hidden":"true"},"#"),o(" 个人介绍")],-1),s=[n];function _(d,i){return a(),r("div",null,s)}const l=t(c,[["render",_],["__file","intro.html.vue"]]);export{l as default};
