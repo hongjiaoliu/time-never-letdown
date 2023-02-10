@@ -5,7 +5,7 @@ export const Sidebar = sidebar({
     "",
     {
       text: "一、Core-Java",
-      icon: "note",
+      icon: "java",
       collapsible: true,
       children: [
         {
@@ -24,7 +24,7 @@ export const Sidebar = sidebar({
     },
     {
       text: "二、Java企业级开发",
-      icon: "note",
+      icon: "advance",
       collapsible: true,
       children: [
         {
@@ -73,7 +73,7 @@ export const Sidebar = sidebar({
     },
     {
       text: "三、数据库",
-      icon: "note",
+      icon: "mysql",
       collapsible: true,
       children: [
         {
@@ -98,7 +98,7 @@ export const Sidebar = sidebar({
     },
     {
       text: "四、通用技能",
-      icon: "note",
+      icon: "structure",
       collapsible: true,
       children: [
         {
@@ -123,7 +123,7 @@ export const Sidebar = sidebar({
     },
     {
       text: "五、扩展系列",
-      icon: "note",
+      icon: "more",
       collapsible: true,
       children: [
         {
@@ -147,6 +147,14 @@ export const Sidebar = sidebar({
       ]
     },
     {
+      icon: "blog",
+      text: "个人网站搭建",
+      prefix: "personal/",
+      link: "personal/",
+      collapsible: true,
+      children: "structure",
+    },
+    {
       icon: "discover",
       text: "踩坑系列",
       prefix: "pits/",
@@ -154,6 +162,10 @@ export const Sidebar = sidebar({
       collapsible: true,
       children: "structure",
     },
-    "intro"
+    {
+      icon: "profile",
+      text: "个人介绍",
+      link: "intro"
+    }
   ],
 });
