@@ -69,6 +69,12 @@ export const Sidebar = sidebar({
           prefix: "enterprise/zk/",
           children: "structure",
         },
+        {
+          text: "2.8、Docker",
+          icon: "note",
+          prefix: "enterprise/docker/",
+          children: "structure",
+        },
       ]
     },
     {

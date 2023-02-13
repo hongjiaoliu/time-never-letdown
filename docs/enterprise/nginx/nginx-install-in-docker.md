@@ -8,7 +8,7 @@ tag:
 star: false
 ---
 
-# Nginx | 4-安装篇-Docker
+# Nginx | 5-安装篇-Docker
 
 > 这里介绍如何使用 docker 安装 nginx，首先我们先启动一个临时的 nginx，将它的配置拷贝到我们将要挂载的本机 nginx 配置目录中，之后再创建一个新的我们要用的 nginx 容器。
 
