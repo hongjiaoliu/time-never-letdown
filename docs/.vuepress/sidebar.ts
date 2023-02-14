@@ -174,8 +174,7 @@ export const Sidebar = sidebar({
     {
       icon: "blog",
       text: "个人网站搭建",
-      prefix: "personal/",
-      link: "personal/",
+      prefix: "pw/",
       collapsible: true,
       children: "structure",
     },
