@@ -12,7 +12,8 @@ star: false
 # Dubbo | 2-框架设计概览
 
 ## 整体设计
-![图 1](./assets/2-framework-design/1675388679554.png)  
+![图 7](https://cdn.liuhongjiao.cn/images/2023/02/14/2-framework-design/1676337651629.png)  
+
 图例说明：
 
 - 图中左边淡蓝背景的为服务消费方使用的接口，右边淡绿色背景的为服务提供方使用的接口，位于中轴线上的为双方都用到的接口。
@@ -48,7 +49,9 @@ star: false
 
 
 ## 模块分包
-![图 2](./assets/2-framework-design/1675388714716.png)  
+
+![图 8](https://cdn.liuhongjiao.cn/images/2023/02/14/2-framework-design/1676337688460.png)  
+
 模块说明：
 
 - **dubbo-common 公共逻辑模块**：包括 Util 类和通用模型。
@@ -70,7 +73,8 @@ star: false
 
 
 ## 依赖关系
-![图 3](./assets/2-framework-design/1675388738062.png)  
+![图 9](https://cdn.liuhongjiao.cn/images/2023/02/14/2-framework-design/1676337712200.png)  
+
 图例说明：
 
 - 图中小方块 Protocol, Cluster, Proxy, Service, Container, Registry, Monitor 代表层或模块，蓝色的表示与业务有交互，绿色的表示只对 Dubbo 内部交互。
@@ -82,15 +86,16 @@ star: false
 
 ## 调用链
 展开总设计图的红色调用链，如下：
-![图 4](./assets/2-framework-design/1675388761522.png)  
+![图 10](https://cdn.liuhongjiao.cn/images/2023/02/14/2-framework-design/1676337733193.png)  
+
 
 ## 暴露服务时序
 展开总设计图左边服务提供方暴露服务的蓝色初始化链，时序图如下：
-![图 5](./assets/2-framework-design/1675388778449.png)  
+![图 11](https://cdn.liuhongjiao.cn/images/2023/02/14/2-framework-design/1676337744592.png)  
 
 ## 引用服务时序
 展开总设计图右边服务消费方引用服务的蓝色初始化链，时序图如下：
-![图 6](./assets/2-framework-design/1675388803000.png)  
+![图 12](https://cdn.liuhongjiao.cn/images/2023/02/14/2-framework-design/1676337754165.png)  
 
 ## 领域模型
 在 Dubbo 的核心领域模型中：
