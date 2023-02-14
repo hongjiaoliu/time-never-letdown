@@ -183,14 +183,15 @@ export const Sidebar = sidebar({
       icon: "discover",
       text: "踩坑系列",
       prefix: "pits/",
-      link: "pits/",
       collapsible: true,
       children: "structure",
     },
     {
       icon: "profile",
       text: "个人介绍",
-      link: "intro"
+      prefix: "intro/",
+      collapsible: true,
+      children: "structure",
     }
   ],
 });
