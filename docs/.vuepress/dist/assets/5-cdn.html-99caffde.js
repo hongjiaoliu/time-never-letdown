@@ -1,0 +1,1 @@
+import{_ as t,V as c,W as n,X as e,Y as o}from"./framework-e5211252.js";const _={},a=e("h1",{id:"_5-cdn配置",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#_5-cdn配置","aria-hidden":"true"},"#"),o(" 5 - CDN配置")],-1),s=e("p",null,"todo",-1),d=[a,s];function r(i,l){return c(),n("div",null,d)}const f=t(_,[["render",r],["__file","5-cdn.html.vue"]]);export{f as default};
