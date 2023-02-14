@@ -9,7 +9,7 @@ tag:
 star: false
 ---
 
-# Dubbo | 2-框架设计概览
+# 2-框架设计概览
 
 ## 整体设计
 ![图 7](https://cdn.liuhongjiao.cn/images/2023/02/14/2-framework-design/1676337651629.png)  

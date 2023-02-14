@@ -9,7 +9,7 @@ tag:
 star: false
 ---
 
-# Dubbo | 3-Dubbo 中的扩展点加载机制
+# 3-Dubbo 中的扩展点加载机制
 
 ## 扩展点配置
 ### 来源：

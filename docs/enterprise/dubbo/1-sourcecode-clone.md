@@ -9,7 +9,7 @@ tag:
 star: false
 ---
 
-# Dubbo | 1-源码下载
+# 1-源码下载
 
 # 代码签出
 ```shell
