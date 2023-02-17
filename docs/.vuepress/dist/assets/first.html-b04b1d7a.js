@@ -1,0 +1,1 @@
+import{_ as t,V as a,W as r,X as e,Y as s}from"./framework-e5211252.js";const c={},o=e("h1",{id:"生活随记第一篇",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#生活随记第一篇","aria-hidden":"true"},"#"),s(" 生活随记第一篇")],-1),n=[o];function _(d,i){return a(),r("div",null,n)}const h=t(c,[["render",_],["__file","first.html.vue"]]);export{h as default};

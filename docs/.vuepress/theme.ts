@@ -48,6 +48,8 @@ export default hopeTheme({
       GitHub: "https://github.com/hongjiaoliu",
     },
   },
+  
+  sidebar:"heading",
 
   locales: {
     "/": {

@@ -1,7 +1,7 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export const Sidebar = sidebar({
-  "/": [
+  "/study/": [
     "",
     {
       text: "一、Core-Java",
@@ -172,25 +172,49 @@ export const Sidebar = sidebar({
       ]
     },
     {
-      icon: "blog",
-      text: "个人网站搭建",
-      prefix: "pw/",
-      collapsible: true,
-      children: "structure",
-    },
-    {
       icon: "discover",
       text: "踩坑系列",
       prefix: "pits/",
       collapsible: true,
       children: "structure",
-    },
+    }
+  ],
+  "/pw/":[
     {
-      icon: "profile",
-      text: "个人介绍",
-      prefix: "intro/",
+      icon: "blog",
+      text: "个人网站搭建",
+      // prefix: "pw/",
       collapsible: true,
       children: "structure",
     }
   ],
+  "/pits/":[
+    {
+      icon: "edit",
+      text: "踩坑",
+      collapsible: true,
+      children: "structure",
+    }
+  ],
+  "/essay/":[
+    {
+      icon: "edit",
+      prefix: "work/",
+      text: "工作日常",
+      collapsible: true,
+      children: "structure",
+    },
+    {
+      icon: "edit",
+      prefix: "life/",
+      text: "生活日常",
+      collapsible: true,
+      children: "structure",
+    }
+  ],
+  "/":[
+    "",
+    "about"
+  ]
+
 });
