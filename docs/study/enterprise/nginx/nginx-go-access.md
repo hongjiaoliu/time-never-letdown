@@ -82,6 +82,12 @@ goaccess logs/access.log -o html/report.html --real-time-html --time-format='%H:
 WebSocket server ready to accept new client connections
 ```
 
+如果要后台执行，在命令行加上  --daemonize  会输出
+
+```
+Daemonized GoAccess: 15449
+```
+
 ## 2、配置report.html代理
 打开日志配置
 ```bash
