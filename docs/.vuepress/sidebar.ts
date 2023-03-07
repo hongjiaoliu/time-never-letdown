@@ -87,7 +87,7 @@ export const Sidebar = sidebar({
         },
         {
           text: "2.9、K8S",
-          icon: "note",
+          icon: "note", 
           prefix: "enterprise/k8s/",
           collapsible: true,
           children: "structure",
