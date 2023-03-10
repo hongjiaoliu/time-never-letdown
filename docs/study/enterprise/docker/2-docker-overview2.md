@@ -147,8 +147,32 @@ docker rmi `docker images | grep none | awk '{print $3}'` 复制代码
 docker rmi -f $(docker images) 复制代码
 ```
 详情访问官网：[docker rmi](https://link.juejin.cn/?target=https%3A%2F%2Fdocs.docker.com%2Fengine%2Freference%2Fcommandline%2Frmi%2F)
+
+### 导出镜像
+
+```shell
+docker image save centos:7.8.2003 > /opt/centos7.8.2003.tgz
+```
+
+### 导入镜像
+```shell
+docker image load -i /opt/centos7.8.2003.tgz
+```
+
 ### 打包镜像
-# -t 表示指定镜像仓库名称/镜像名称:镜像标签 .表示使用当前目录下的Dockerfile文件 docker build -t mall/mall-admin:1.0-SNAPSHOT . 复制代码
+
+```shell
+ -t 表示指定镜像仓库名称/镜像名称:镜像标签 .表示使用当前目录下的Dockerfile文件 
+ docker build -t mall/mall-admin:1.0-SNAPSHOT 
+```
+
+### 提交容器
+
+```shell
+docker commit 容器id 新的镜像名（dockerhub账号/新的镜像名）
+
+```
+
 ## Docker容器常用命令
 ### 新建并启动容器
 ```
@@ -206,6 +230,13 @@ nsenter --target "$pid" --mount --uts --ipc --net --pid
 ```
 ![图 8](https://cdn.liuhongjiao.cn/images/2023/03/07/2-docker-overview2/1678157902304.png)  
 
+- 进入容器的命令
+```shell
+docker exec -it 容器id bash 
+```
+
+
+
 ### 删除容器
 
 - 删除指定容器：
@@ -240,7 +271,11 @@ docker inspect --format '{{ .NetworkSettings.IPAddress }}' $ContainerName
 ![图 10](https://cdn.liuhongjiao.cn/images/2023/03/07/2-docker-overview2/1678157940673.png)  
 
 ### 修改容器的启动方式
-# 将容器启动方式改为always docker container update --restart=always $ContainerName 复制代码
+
+```shell
+将容器启动方式改为
+always docker container update --restart=always $ContainerName
+```
 ### 同步宿主机时间到容器
 ```
 docker cp /etc/localtime $ContainerName:/etc/ 
@@ -279,8 +314,11 @@ docker exec -it $ContainerName /bin/bash 复制代码
 ![图 13](https://cdn.liuhongjiao.cn/images/2023/03/07/2-docker-overview2/1678157982213.png)  
 
 ### 指定账号进入容器内部
-# 使用root账号进入容器内部 docker exec -it --user root $ContainerName /bin/bash 复制代码
-### 查看所有网络
+使用root账号进入容器内部
+```
+ docker exec -it --user root $ContainerName /bin/bash 复制代码
+```
+### 查看所有网络 
 ```
 docker network ls 复制代码
 [root@local-linux ~]# docker network ls NETWORK ID          NAME                     DRIVER              SCOPE 59b309a5c12f        bridge                   bridge              local ef34fe69992b        host                     host                local a65be030c632        none      
