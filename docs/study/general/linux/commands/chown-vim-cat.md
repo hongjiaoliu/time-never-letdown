@@ -15,6 +15,8 @@ star: true
 ## chown
 
 命令：
+
+```shell
 chown（更改用户及用户组，全拼：change owner）
 chown [-cfhvR] [--help] [--version] user[:group] file...
 参数：
@@ -27,20 +29,26 @@ group : 新的文件拥有者的使用者组(group)
 -R : 处理指定目录以及其子目录下的所有文件
 --help : 显示辅助说明
 --version : 显示版本
+```
 
 示例：
+
+```shell
 chown mail:mail log2012.log
 chown -R -v root:mail test6
 chown :mail log2012.log
 chown root: log2012.log
-chown root testshown 把 /home/wangning/testshown 的所有者设置 root
+chown root testshown 把 /home/user/testshown 的所有者设置 root
 chown root:root testshown1  将文件testshown1的拥有者设为 root，群体的使用者 root
 chown -R root:root *  将当前前目录下的所有文件与子目录的拥有者皆设为 root，群体的使用者 root
-chown :1001 /home/wangning/testshown 把 /home/wangning/testshown 的关联组设置为 1001 （关联组ID），不改变所有者
+chown :1001 /home/user/testshown 把 /home/user/testshown 的关联组设置为 1001 （关联组ID），不改变所有者
+```
 
 ## vim 
 
 ### 常用基本操作
+
+```shell
 i: 在当前光标所在字符的前面，转为输入模式；    
 
 a: 在当前光标所在字符的后面，转为输入模式；    
@@ -52,9 +60,11 @@ o: 在当前光标所在行的下方，新建一行，并转为输入模式；
 A：在当前光标所在行的行尾，转换为输入模式    
 
 O：在当前光标所在行的上方，新建一行，并转为输入模式；
+```
 
 ### ESC模式下
 
+```shell
 yy ：复制 （yy前面可加数字，例如:2yy复制两行，）
 
 p: 粘贴
@@ -76,9 +86,11 @@ shift + $ :行尾部
 批量操作：
 
 选中模式下shift + i/a/o 输入内容，按ESC即可
+```
 
 ## cat 
 
+```shell
 英文：concatenate）命令用于连接文件并打印到标准输出设备上。
 
 语法格式：cat [-AbeEnstTuv] [--help] [--version] fileName；
@@ -102,9 +114,11 @@ shift + $ :行尾部
 -e：等价于"-vE"选项；
 
 -t：等价于"-vT"选项
+```
 
 实例：
 
+```shell
 cat -n textfile1 > textfile2
 
 cat -b textfile1 textfile2 >> textfile3
@@ -112,3 +126,7 @@ cat -b textfile1 textfile2 >> textfile3
 cat /dev/null > /etc/test.txt      //清空文件内容
 
 cat IMG_FILE > /dev/fd0         //把image_file写到软盘
+```
+
+
+

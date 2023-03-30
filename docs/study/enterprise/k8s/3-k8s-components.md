@@ -27,6 +27,9 @@ star: false
 
 ## 组件架构图
 
+![图 2](https://cdn.liuhongjiao.cn/images/2023/03/28/3-k8s-components/1679968239176.png)  
+
+
 ## 面试题：Pod是如何被创建到目标机器上的，组件走向
 ![图 1](https://cdn.liuhongjiao.cn/images/2023/03/27/3-k8s-components/1679908268941.png)  
 
