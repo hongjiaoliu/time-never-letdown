@@ -1499,7 +1499,7 @@ spec:
 
   - 可以以它为依据，评估整个Pod的健康状态
 
-  - 可以在根容器上设置Ip地址，其它容器都此Ip（Pod IP），以实现Pod内部的网路通信
+  - 可以在根容器上设置Ip地址，其它容器都共享此Ip（Pod IP），以实现Pod内部的网路通信
 
     ```
     这里是Pod内部的通讯，Pod的之间的通讯采用虚拟二层网络技术来实现，我们当前环境用的是Flannel
@@ -2449,7 +2449,7 @@ spec:
       containerPort: 80
     livenessProbe:
       httpGet:
-        scheme: HTTP
+        scheme: HTTPf
         port: 80 
         path: /
       initialDelaySeconds: 30 # 容器启动后30s开始探测
@@ -2738,7 +2738,7 @@ NAME                        READY   STATUS    RESTARTS   AGE   IP            NOD
 pod-nodeaffinity-required   1/1     Running   0          11s   10.244.1.89   node1 ......
 ```
 
-接下来再演示一下`requiredDuringSchedulingIgnoredDuringExecution` ,
+接下来再演示一下`preferredDuringSchedulingIgnoredDuringExecution` ,
 
 创建pod-nodeaffinity-preferred.yaml
 
