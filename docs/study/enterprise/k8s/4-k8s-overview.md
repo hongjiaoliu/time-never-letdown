@@ -11,6 +11,7 @@ star: false
 # Kubernetes详细教程
 
 > 转自：https://gitee.com/yooome/golang.git
+> B站配套视频：https://www.bilibili.com/video/BV1Qv41167ck?p=1&vd_source=4819afd196d60562b4542c3eee0c4bee
 
 ### 1. Kubernetes介绍
 
