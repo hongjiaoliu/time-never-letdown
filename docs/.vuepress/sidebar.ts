@@ -92,6 +92,13 @@ export const Sidebar = sidebar({
           collapsible: true,
           children: "structure",
         },
+        {
+          text: "2.10、Mybatis",
+          icon: "note", 
+          prefix: "enterprise/mybatis/",
+          collapsible: true,
+          children: "structure",
+        },
       ]
     },
     {
