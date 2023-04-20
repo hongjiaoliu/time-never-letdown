@@ -9,6 +9,7 @@ star: false
 ---
 
 # Mybatis简介
+> 转自：https://gitee.com/yooome/golang/blob/main/MyBatis/README.md#
 ## MyBatis历史
 -    MyBatis最初是Apache的一个开源项目iBatis, 2010年6月这个项目由Apache Software Foundation迁移到了Google Code。随着开发团队转投Google Code旗下，iBatis3.x正式更名为MyBatis。代码于2013年11月迁移到Github
 - iBatis一词来源于“internet”和“abatis”的组合，是一个基于Java的持久层框架。iBatis提供的持久层框架包括SQL Maps和Data Access Objects（DAO）
