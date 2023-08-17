@@ -9,7 +9,7 @@ tag:
 star: true
 ---
 
-# 基本命令 | df/ping/rm/scp/wc
+# 基本 | df/ping/rm/scp/wc
 
 1.df命令（disk free）显示目前在 Linux 系统上的文件系统磁盘使用情况统计
 -h, --human-readable 使用人类可读的格式(预设值是不加这个选项的...)

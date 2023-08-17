@@ -9,7 +9,7 @@ tag:
 star: true
 ---
 
-# 基本命令 | chown/vim/cat 
+# 基础 | chown/vim/cat 
 
 
 ## chown
