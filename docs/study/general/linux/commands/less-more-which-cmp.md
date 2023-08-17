@@ -9,7 +9,7 @@ tag:
 star: true
 ---
 
-# 基本命令 | less/more/which/cmp
+# 基本 | less/more/which/cmp
 
 ## less命令：
 
