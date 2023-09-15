@@ -9,7 +9,7 @@ tag:
 star: true
 ---
 
-# 基本 | *awk
+# 基本 | 三剑客-awk
 
 ## 1. awk简介
 

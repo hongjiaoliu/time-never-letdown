@@ -186,6 +186,27 @@ export const Sidebar = sidebar({
       ]
     },
     {
+      text: "六、提效工具",
+      icon: "more",
+      collapsible: true,
+      children: [
+        {
+          text: "6.1、QA",
+          icon: "note",
+          prefix: "tools/qa/",
+          collapsible: true,
+          children: "structure",
+        },
+        {
+          text: "6.2、运维工具",
+          icon: "note",
+          prefix: "tools/sre/",
+          collapsible: true,
+          children: "structure",
+        }
+      ]
+    },
+    {
       icon: "discover",
       text: "踩坑系列",
       prefix: "pits/",
