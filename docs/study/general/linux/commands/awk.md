@@ -168,7 +168,7 @@ awk可以和Shell结合使用:
 下面是一个awk的复杂示例:
 
 ```bash
-bash
+
 awk -F':' '{
   uid[$3]++; 
   if ($7=="/bin/bash") bash_users++;
@@ -216,7 +216,6 @@ awk '
 使用xk库解析xml:
 
 ```bash
-bash
 awk '
   @include "awk/xml.awk"
   @load "xml"
@@ -236,7 +235,6 @@ awk '
 设置FS解析csv:
 
 ```bash
-bash
 awk '
   BEGIN {
     FS="," 
@@ -254,7 +252,6 @@ awk '
 awk的模式中可以使用正则表达式进行复杂匹配:
 
 ```bash
-bash
 awk '/^[a-z]+/ {print $0}' file # 匹配以小写字母开头的行
 
 awk '!/th[eo]n/ {print $0}' file # 不匹配then和theon的行
@@ -273,7 +270,6 @@ awk可以调用外部Linux命令,结合Linux强大的命令行工具做更复杂
 示例:统计Apache访问日志中前10个IP
 
 ```bash
-bash
 awk '{print $1}' access.log | sort | uniq -c | sort -nr | head -10
 ```
 
@@ -281,7 +277,6 @@ awk '{print $1}' access.log | sort | uniq -c | sort -nr | head -10
 再例如:
 
 ```bash
-bash
 awk '{system("dig +short -x " $1)}' ip.txt
 ```
 
@@ -326,14 +321,12 @@ awk '{system("dig +short -x " $1)}' ip.txt
 监测系统负载:
 
 ```bash
-bash
 awk '{print $1 " " $2 " " $3}' /proc/loadavg
 ```
 
 监测磁盘使用:
 
 ```bash
-bash 
 df -h | awk 'NR!=1{print $5}'
 ```
 
@@ -344,14 +337,12 @@ df -h | awk 'NR!=1{print $5}'
 监测网站响应时间:
 
 ```bash
-bash
 ping www.example.com -c 5 | awk -F'/' 'END{print "Average: " $4}'
 ```
 
 分析Apache日志:
 
 ```bash
-bash
 awk '{print $1}' /var/log/apache2/access.log | sort | uniq -c | sort -n
 ```
 
@@ -360,18 +351,14 @@ awk '{print $1}' /var/log/apache2/access.log | sort | uniq -c | sort -n
 备份配置文件:
 
 ```bash
-bash
 awk '{print "> " $0}' /etc/nginx/nginx.conf > nginx.conf.bak
 ```
-
-
 
 ### 日志分析
 
 分析SSH失败登录:
 
 ```bash
-bash 
 awk '/Failed/{print $1 " " $2 " " $3}' /var/log/auth.log
 ```
 
