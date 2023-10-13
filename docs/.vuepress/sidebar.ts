@@ -183,6 +183,13 @@ export const Sidebar = sidebar({
           collapsible: true,
           children: "structure",
         },
+        {
+          text: "5.4、桌面应用",
+          icon: "note",
+          prefix: "expand/pc-app/",
+          collapsible: true,
+          children: "structure",
+        }
       ]
     },
     {
