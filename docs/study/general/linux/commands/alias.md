@@ -156,4 +156,61 @@ source ~/.bashrc # 使alias生效
 ```
 
 
-以上就是linux alias命令在软件工程师工作中使用的详尽技术笔记。
+### 5.其他
+
+```bash
+-='cd -'
+...=../..
+....=../../..
+.....=../../../..
+......=../../../../..
+1='cd -1'
+2='cd -2'
+3='cd -3'
+4='cd -4'
+5='cd -5'
+6='cd -6'
+7='cd -7'
+8='cd -8'
+9='cd -9'
+_='sudo '
+afind='ack -il'
+diff='diff --color'
+egrep='egrep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.idea,.tox}'
+fgrep='fgrep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.idea,.tox}'
+globurl='noglob urlglobber '
+grep='grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.idea,.tox}'
+history=omz_history
+l='ls -lah'
+la='ls -lAh'
+ll='ls -lh'
+ls='ls -G'
+lsa='ls -lah'
+md='mkdir -p'
+mvnc='mvn clean'
+mvncc='mvnc compile'
+mvncc-d='mvncc -P dev'
+mvncc-p='mvncc -P product'
+mvncc-r='mvncc -P release'
+mvncc-t='mvncc -P test'
+mvncd='mvnc deploy'
+mvncd-d='mvncd -P dev'
+mvncd-p='mvncd -P product'
+mvncd-r='mvncd -P release'
+mvncd-t='mvncd -P test'
+mvnci='mvnc install'
+mvnci-d='mvnci -P dev'
+mvnci-p='mvnci -P product'
+mvnci-r='mvnci -P release'
+mvnci-t='mvnci -P test'
+mvncp='mvnc package'
+mvncp-d='mvncp -P dev'
+mvncp-p='mvncp -P product'
+mvncp-r='mvncp -P release'
+mvncp-t='mvncp -P test'
+python=python3
+rd=rmdir
+run-help=man
+st='open -a /Applications/Sublime\ Text.app'
+which-command=whence
+```
