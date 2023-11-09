@@ -10,63 +10,77 @@ star: true
 ---
 
 # 基础 | hostname
+## 基本信息
 
-## 一、hostname命令简介
-hostname命令用于查看或者设置当前系统的主机名。
-主机名是区分不同Linux系统的一个重要标识。
-## 二、hostname命令语法
-```bash
-hostname(选项)(参数)
-```
+hostname命令用于查看或临时设置主机名。要永久修改主机名需要修改相关配置文件。
 
+## 基础用法
 
-选项:
-
-- -V:显示版本信息并退出
-- -h:显示帮助信息并退出
-- -i:显示主机的所有网络地址
-- -s:只显示主机名,不显示域名
-- -f:显示FQDN(完全限定域名)
-参数:
-主机名
-## 三、hostname命令使用示例
-1. 查看当前主机名
-  ```bash
+- 查看当前主机名
   hostname
-  ```
+- 临时设置主机名(重启后失效)
+  hostname newhostname
 
-  设置主机名为myhost
-  ```bash
-  hostname myhost
-  ```
-2. 显示FQDN
-  ```bash
-  hostname -f
-  ```
-3. 只显示主机名,不显示域名
-  ```bash
-  hostname -s
-  ```
+## 永久修改主机名
 
-4. 显示版本信息
-  ```bash
-  hostname -V
-  ```
-## 四、hostname命令注意事项
-- hostname命令设置的主机名是暂时的,重启后会还原
-- 要永久修改主机名需要修改/etc/hostname文件
-## 五、hostname命令与hosts文件
-hosts文件中存储着主机名与IP地址的映射关系。hostname命令与hosts文件经常配合使用来确认主机名与IP地址的对应关系。
-1. 在hosts文件中添加记录
+### CentOS/RHEL
 
-  ```bash
-  192.168.1.101 myhost
-  ```
+修改/etc/sysconfig/network文件,添加HOSTNAME=newhostname
+vim /etc/sysconfig/network
 
-2. 使用hostname命令查看主机名与IP地址
-  ```bash
+HOSTNAME=newhostname
+
+### Ubuntu/Debian
+
+修改/etc/hostname文件,并修改/etc/hosts文件,将127.0.0.1对应的主机名改为新主机名。
+vim /etc/hostname
+
+newhostname
+
+vim /etc/hosts
+
+127.0.0.1   newhostname
+
+### openSUSE
+
+修改/etc/HOSTNAME文件,并修改/etc/hosts文件。
+vim /etc/HOSTNAME
+
+newhostname
+
+vim /etc/hosts
+
+127.0.0.1   newhostname
+
+### Arch Linux
+
+修改/etc/hostname文件,并修改/etc/hosts文件。
+vim /etc/hostname 
+
+newhostname
+
+vim /etc/hosts
+
+127.0.0.1   newhostname
+
+## 推荐方式
+
+使用hostnamectl命令设置主机名:
+hostnamectl set-hostname newhostname
+hostnamectl在多数新版本Linux中可用,是更推荐的设置主机名的方式。
+
+## 其他高级用法
+
+- 查看主机域名
+  hostname -d
+- 查看IP地址
   hostname -i
-  ```
 
+- 查看所有网络地址
+  hostname -I
+- 查看完整主机名和域名
+  hostname --fqdn
 
-  以上为hostname命令的详细用法介绍。欢迎大家在使用中遇到任何问题都可以在评论区讨论。
+## 总结
+
+hostname命令功能单一实用,是Linux系统管理的基础。要注意不同发行版的配置文件路径可能有差异。推荐使用hostnamectl统一设置主机名。
