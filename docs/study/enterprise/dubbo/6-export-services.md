@@ -1160,8 +1160,9 @@ public static Server bind(URL url, ChannelHandler... handlers) throws RemotingEx
         // 获取自适应 Transporter 实例，并调用实例方法
         return getTransporter().bind(url, handler);
     }
+        //如上，getTransporter() 方法获取的 Transporter 是在运行时动态创建的，类名为 "Transporter$Adaptive"，也就是自适应拓展类。"Transporter$Adaptive" 会在运行时根据传入的 URL 参数决定加载什么类型的 Transporter，默认为 NettyTransporter。下面我们继续跟下去，这次分析的是 NettyTransporter 的 bind 方法。
 ```
-如上，getTransporter() 方法获取的 Transporter 是在运行时动态创建的，类名为 "Transporter$Adaptive"，也就是自适应拓展类。"Transporter$Adaptive" 会在运行时根据传入的 URL 参数决定加载什么类型的 Transporter，默认为 NettyTransporter。下面我们继续跟下去，这次分析的是 NettyTransporter 的 bind 方法。
+
 ```java
  @Override
     public Server bind(URL url, ChannelHandler listener) throws RemotingException {

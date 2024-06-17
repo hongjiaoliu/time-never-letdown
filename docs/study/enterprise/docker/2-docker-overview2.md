@@ -201,7 +201,10 @@ docker ps -a 复制代码
 ![图 7](https://cdn.liuhongjiao.cn/images/2023/03/07/2-docker-overview2/1678157882771.png)  
 
 ### 停止容器
-注意：$ContainerName表示容器名称，$ContainerId表示容器ID，可以使用容器名称的命令，基本也支持使用容器ID，比如下面的停止容器命令。
+```
+注意：$ContainerName 表示容器名称，$ContainerId 表示容器ID，可以使用容器名称的命令，基本也支持使用容器ID，比如下面的停止容器命令。
+```
+
 ```
 docker stop $ContainerName(or $ContainerId) 复制代码
 ```
