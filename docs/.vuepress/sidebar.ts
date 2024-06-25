@@ -189,7 +189,15 @@ export const Sidebar = sidebar({
           prefix: "expand/pc-app/",
           collapsible: true,
           children: "structure",
+        },
+        {
+          text: "5.5、Django",
+          icon: "note",
+          prefix: "expand/django/",
+          collapsible: true,
+          children: "structure",
         }
+
       ]
     },
     {
